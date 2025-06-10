@@ -9,6 +9,15 @@
   "routes": [
     {
       "src": "/no",
+      "dest": "/index.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*)",
       "dest": "/index.js"
     }
   ]
